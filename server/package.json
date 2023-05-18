@@ -5,8 +5,9 @@
   "license": "AGPL-3.0-or-later",
   "packageManager": "yarn@3.5.1",
   "scripts": {
-    "watch": "ts-node-dev --respawn ./src/index.ts",
+    "watch": "ts-node-dev --files --respawn ./src/index.ts",
     "build": "tsc --build",
+    "start": "yarn build && cd build && node index.js",
     "clean-build": "tsc --build --clean",
     "lint": "eslint --ext .ts ./src",
     "lint-fix": "eslint --ext .ts ./src --fix"
