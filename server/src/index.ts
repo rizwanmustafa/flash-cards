@@ -44,7 +44,7 @@ app.post("/flash-cards/", (req: express.Request, res: express.Response) => {
 });
 
 
-const SERVER_PORT = process.env.PORT || 3000;
+const SERVER_PORT = process.env.PORT || 5000;
 
 app.listen(SERVER_PORT, (): void => {
   console.log(`Server is running on port ${SERVER_PORT}!`);
